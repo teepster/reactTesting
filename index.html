@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First React Example</title>
+    <script src="/js/react-0.13.3.js"></script>
+    <script src="/js/JSXTransformer-0.13.3.js"></script>
+  </head>
+  <body>
+    <div id="greeting-div"></div>
+    <script type="text/jsx">
+      var Greeting = React.createClass({
+        render: function() {
+          return (
+            <p>Hello, Universe</p>
+          )
+        }
+      });
+      React.render(
+        <Greeting/>,
+        document.getElementById('greeting-div')
+      );
+
+      // var UpdateText = React.createClass({
+      //   // getInitialState: function(){
+      //   //   return {name: ''}
+      //   // },
+      //   // change: function(e){
+      //   //   this.setState({name: e.target.value})
+      //   // },
+      //
+      //   render: function() {
+      //     return (
+      //       <div>
+      //       <h1>monkeybutt</h1>
+      //         // <input type="text" name="name" onChange={this.change} />
+      //         // <h1> Hello {this.state.name}!!!</h1>
+      //       </div>
+      //     )
+      //   }
+      // });
+      //
+      // React.render(
+      //   <UpdateText/>,
+      //   document.getElementById('.change-text')
+      // );
+    </script>
+
+  </body>
+</html>
