@@ -2,22 +2,6 @@
 
 var React = require("React");
 
-// var ClickCounter = React.createClass( {
-//   getInitialState: function() {
-//     return {
-//       numClicks: 0
-//     };
-//   },
-//   render: function() {
-//     return (
-//       <div>
-//         {this.state.numClicks} clicks
-//       </div>
-//
-//     )
-//   }
-// });
-
 var Detonator = React.createClass( {
   getInitialState: function() {
     return {
